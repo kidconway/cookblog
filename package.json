@@ -5,10 +5,11 @@
   "scripts": {
     "start": "node ./bin/www",
     "dev": "nodemon ./bin/www",
-    "sass": "node-sass --include-path sass ./public/stylesheets/custom.scss ./public/stylesheets/style.css"
+    "sass": "node-sass --include-path sass ./public/stylesheets/custom.scss ./public/stylesheets/style.css",
+    "sass-watch": "node-sass --watch --include-path sass ./public/stylesheets/custom.scss ./public/stylesheets/style.css"
   },
   "dependencies": {
-    "bootstrap": "^4.3.1",
+    "bootstrap": "^4.0.0-beta.3",
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
     "dotenv": "^8.0.0",

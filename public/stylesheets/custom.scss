@@ -1,6 +1,16 @@
-@import "node_modules/bootstrap/functions";
-@import "node_modules/bootstrap/variables";
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
 
 
 
-@import "node_modules/bootstrap/scss/bootstrap";
+$cool-red: #677ef0 !default;
+$forest-green: #4a7a20 !default;
+$dark-green: #084712 !default;
+
+$theme-colors: map-merge((
+  "cool-red":    $cool-red,
+  "forest-green": $forest-green,
+  "dark-green": $dark-green
+), $theme-colors);
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
