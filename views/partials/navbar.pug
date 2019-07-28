@@ -1,0 +1,23 @@
+nav.navbar.navbar-expand-lg.navbar-light.bg-light
+  a.navbar-brand(href='/')
+    img.img-fluid(src='/images/logo.png' style='width: 100px')
+  button.navbar-toggler(type='button' data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation")
+    
+    span.navbar-toggler-icon
+  div#navbarSupportedContent.collapse.navbar-collapse
+    ul.navbar-nav.ml-auto
+      li.nav-item
+        a.nav-link(href='') Home
+      li.nav-item
+        a.nav-link(href='') Account
+      li.nav-item
+        a.nav-link(href='') Recipes
+      li.nav-item
+        a.nav-link(href='') Cookbook
+      li.nav-item.dropdown
+        a.nav-link.dropdown-toggle#navbarDropdown(href='/' role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") Dropdown
+        div.dropdown-menu.dropdown-menu-right(aria-labelledby="navbarDropdown")
+          a.dropdown-item(href='') My Account
+          a.dropdown-item(href='') About Us
+          a.dropdown-item(href='') Something else
+  
