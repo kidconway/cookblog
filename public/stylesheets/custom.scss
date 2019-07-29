@@ -1,16 +1,155 @@
 @import "../../node_modules/bootstrap/scss/functions";
 @import "../../node_modules/bootstrap/scss/variables";
 
+// Custom Theme Colors
 
-
-$cool-red: #677ef0 !default;
+$facebook: #405D9D !default;
+$twitter: #42AEEC !default;
 $forest-green: #4a7a20 !default;
 $dark-green: #084712 !default;
 
 $theme-colors: map-merge((
-  "cool-red":    $cool-red,
   "forest-green": $forest-green,
-  "dark-green": $dark-green
+  "dark-green": $dark-green,
+  "facebook": $facebook,
+  "twitter": $twitter
 ), $theme-colors);
 
 @import "../../node_modules/bootstrap/scss/bootstrap";
+
+// Login and Registration
+
+.login-reg-cover {
+background-image: url('../images/background-cover.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+height: 100%;
+height: 800px;
+}
+
+.container{
+height: 100%;
+align-content: center;
+}
+
+.login-card{
+height: 370px;
+margin-top: auto;
+margin-bottom: auto;
+width: 400px;
+background-color: rgba(0,0,0,0.8) !important;
+}
+
+.register-card{
+height: 660px;
+margin-top: auto;
+margin-bottom: auto;
+width: 400px;
+background-color: rgba(0,0,0,0.8) !important;
+}
+
+.facebook-spinner {
+  background: #4267b2;
+  border-radius: 5px;
+  color: white;
+  height: 40px;
+  text-align: center;
+  width: 250px;
+}
+
+.social_icon span{
+font-size: 50px;
+margin-left: 10px;
+color: #FFC312;
+}
+
+.social_icon span:hover{
+color: white;
+cursor: pointer;
+}
+
+.card-header h3{
+color: white;
+}
+
+.social_icon{
+position: absolute;
+right: 20px;
+top: -45px;
+}
+
+.input-group-prepend span{
+width: 50px;
+background-color: #FFC312;
+color: black;
+border:0 !important;
+}
+
+input:focus{
+outline: 0 0 0 0  !important;
+box-shadow: 0 0 0 0 !important;
+
+}
+
+.remember{
+color: white;
+}
+
+.remember input
+{
+width: 20px;
+height: 20px;
+margin-left: 15px;
+margin-right: 5px;
+}
+
+.login_btn{
+color: black;
+background-color: #FFC312;
+width: 100px;
+}
+
+.login_btn:hover{
+color: black;
+background-color: white;
+}
+
+.links{
+color: white;
+}
+
+.links a{
+margin-left: 4px;
+}
+
+.divider-text {
+    position: relative;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.divider-text span {
+    padding: 7px;
+    font-size: 12px;
+    position: relative;
+    z-index: 2;
+}
+.divider-text:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+    top: 55%;
+    left: 0;
+    z-index: 1;
+}
+
+/* .login-reg-divider {
+  background-color: rgba(0,0,0,0.8) !important;
+} */
+
+
+// Main page
+.carousel-inner img {
+  margin: auto;
+}

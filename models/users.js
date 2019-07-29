@@ -44,6 +44,6 @@ const userSchema = new mongoose.Schema({
 }, {timestamps: true });
 
 userSchema.plugin(mongooseBcrypt);
-userSchema.plugin(passportLocalMongoose, { usernameField: 'email' });
+userSchema.plugin(passportLocalMongoose, { usernameQueryFields: ['email'] });
 
 module.exports = mongoose.model('User', userSchema);

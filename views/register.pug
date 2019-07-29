@@ -1,0 +1,50 @@
+extends layout
+
+block content
+  .login-reg-cover
+    .container
+      .d-flex.justify-content-center.h-100
+        .card.register-card
+          .card-header
+            h3.text-center Register
+          .card-body
+            a.btn.btn-block.btn-twitter.text-white(href='/')
+              i.fab.fa-twitter 
+              span.ml-2 Login via Twitter
+            a.btn.btn-block.btn-facebook.text-white.mb-2(href='/')
+              i.fab.fa-facebook-f 
+              span.ml-2 Login with Facebook
+            p.divider-text OR
+            form(action='/register' method='POST')
+              .input-group.form-group
+                .input-group-prepend
+                  span.input-group-text
+                    i.fas.fa-user
+                input.form-control(type='text' name='username' placeholder='Username')
+              .input-group.form-group
+                .input-group-prepend
+                  span.input-group-text
+                    i.fas.fa-envelope
+                input.form-control(type='email' name='email' placeholder='Email')
+              .input-group.form-group
+                .input-group-prepend
+                  span.input-group-text
+                    i.fas.fa-hamburger
+                input.form-control(type='text' name='fname' placeholder='First Name')
+              .input-group.form-group
+                .input-group-prepend
+                  span.input-group-text
+                    i.fas.fa-ghost
+                input.form-control(type='text' name='lname' placeholder='Last Name')
+              .input-group.form-group
+                .input-group-prepend
+                  span.input-group-text
+                    i.fas.fa-key
+                input.form-control(type='password' name='password' placeholder='Password')
+              .input-group.form-group
+                .input-group-prepend
+                  span.input-group-text
+                    i.fas.fa-key
+                input.form-control(type='password' name='confirm_password' placeholder='Confirm Password')
+              .form-group
+                input.btn.float-right.login_btn(type='submit' value='Register')
